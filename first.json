@@ -1,0 +1,34 @@
+{
+    "pizzalar":[
+     {
+         "name":"Margarita",
+         "ingridents":[
+             "tomata",
+             "sausage",
+             "chees"
+         ],
+         "salary":18
+     },
+     {
+        "name":"Pizza Papa",
+        "ingridents":[
+            "tomata",
+            "sausage",
+            "chees",
+            "bacon",
+            "meat"
+        ],
+        "salary":25
+    },
+    {
+        "name":"Pepperone",
+        "ingridents":[
+            "tomata",
+            "sausage",
+            "chees",
+            "pepper"
+        ],
+        "salary":20
+    }
+    ]
+}

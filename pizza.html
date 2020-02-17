@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza papa</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<link rel="stylesheet" href="./main.css">
+
+    <script>
+        $(document).ready(function () {
+
+            var pizzalar = [
+            {
+         "name":"Margarita",
+         "ingridents":[
+             "tomata",
+             "sausage",
+             "chees"
+         ],
+         "salary":18
+     },
+     {
+        "name":"Pizza Papa",
+        "ingridents":[
+            "tomata",
+            "sausage",
+            "chees",
+            "bacon",
+            "meat"
+        ],
+        "salary":25
+    },
+    {
+        "name":"Pepperone",
+        "ingridents":[
+            "tomata",
+            "sausage",
+            "chees",
+            "pepper"
+        ],
+        "salary":20
+    }
+            ];
+
+            var jsontype = JSON.stringify(pizzalar);
+            var changetype = JSON.parse(jsontype);
+           
+            for (var i = 0; i < changetype.length; i++) {
+                var satir = "<tr>";
+                satir += "<td>" + changetype[i].name + "</td>";
+                satir += "<td>" + changetype[i].ingridents + "</td>";
+
+                satir += "<td>" + changetype[i].salary + "</td>";
+                satir+="</tr>";
+                $("#pizzalist").append(satir);
+
+            }
+        });
+    </script>
+</head>
+
+<body>
+
+    
+        <table id="pizzalist" >
+            <tr>
+                <td>Pizza Name</td>
+                <td>Ingridents</td>
+                <td>Cost</td>
+            </tr>
+        </table>
+</body>
+
+</html>
